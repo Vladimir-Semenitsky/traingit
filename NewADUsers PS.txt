@@ -1,0 +1,2 @@
+DistinguishedName,Department,SamAccountName,Name,GivenName,Surname,UserPrincipalName,City,Enabled,ChangePasswordAtLogon
+"OU=Users,OU=OFFICE_TINDA,OU=ELEMENTS,DC=ao-el,DC=com",,103,"Ким Юрий Алексеевич",Юрий,Ким,103@ao-el.com,,$True,$False

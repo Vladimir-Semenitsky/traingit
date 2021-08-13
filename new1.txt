@@ -39,3 +39,5 @@ New-ADUser -Path "OU=Users,OU=OFFICE_TINDA,OU=ELEMENTS,DC=ao-el,DC=com" -SamAcco
 #Add mbadmin account to Admin Groups
 Add-ADGroupMember -Identity 'FSLogix Share Contributor' -Members 106,104,141
 Add-ADGroupMember -Identity 'WVDS' -Members 106,104,141
+
+#test
