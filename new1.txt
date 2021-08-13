@@ -1,0 +1,41 @@
+﻿#UserSetup
+$SetPass = read-host -assecurestring
+$Users =Import-CSV "C:\shares\demos\setup\DemoUsers.csv" 
+$cred = Get-Credential
+#get-aduser -Filter * -Properties *| gm
+ForEach ($user in $users){ 
+    
+    
+        }
+#Set accounts as enabled
+    Set-ADUser -Identity 'mbtest' -Enabled $True
+    set-aduser -Identity 'mbadmin' -enable $true
+
+
+
+New-ADUser -Path "OU=Users,OU=OFFICE_TINDA,OU=ELEMENTS,DC=ao-el,DC=com" -SamAccountName 115 -Name "Чёрная Оксана Ивановна"  -Surname Чёрная -GivenName Оксана -UserPrincipalName 115@ao-el.com -DisplayName "Чёрная Оксана Ивановна" -EmailAddress '115@svz-el.com' -MobilePhone '+89241484449' -ChangePasswordAtLogon $False -AccountPassword(Read-Host -AsSecureString "Input Password") -Enabled $true -CannotChangePassword $True -PasswordNeverExpires $True -Verbose
+
+New-ADUser -Path "OU=Users,OU=OFFICE_TINDA,OU=ELEMENTS,DC=ao-el,DC=com" -SamAccountName 155 -Name "Рязанов Александр Валерьевич"  -Surname Рязанов -GivenName Александр -UserPrincipalName 155@ao-el.com -DisplayName "Рязанов Александр Валерьевич" -EmailAddress '155@svz-el.com' -MobilePhone '+89177203966' -ChangePasswordAtLogon $False -AccountPassword(Read-Host -AsSecureString "Input Password") -Enabled $true -CannotChangePassword $True -PasswordNeverExpires $True -Verbose
+
+New-ADUser -Path "OU=Users,OU=OFFICE_TINDA,OU=ELEMENTS,DC=ao-el,DC=com" -SamAccountName 157 -Name "Климов Денис Николаевич"  -Surname Климов -GivenName Денис -UserPrincipalName 157@ao-el.com -DisplayName "Климов Денис Николаевич" -EmailAddress '157@svz-el.com' -MobilePhone '+89878355630' -ChangePasswordAtLogon $False -AccountPassword(Read-Host -AsSecureString "Input Password") -Enabled $true -CannotChangePassword $True -PasswordNeverExpires $True -Verbose
+
+New-ADUser -Path "OU=Users,OU=OFFICE_TINDA,OU=ELEMENTS,DC=ao-el,DC=com" -SamAccountName 140 -Name "Кальчу Эдуард Дмитриевич"  -Surname Кальчу -GivenName Эдуард -UserPrincipalName 140@ao-el.com -DisplayName "Кальчу Эдуард Дмитриевич" -EmailAddress '140@svz-el.com' -MobilePhone '+89146157073' -ChangePasswordAtLogon $False -AccountPassword(Read-Host -AsSecureString "Input Password") -Enabled $true -CannotChangePassword $True -PasswordNeverExpires $True -Verbose
+
+New-ADUser -Path "OU=Users,OU=OFFICE_TINDA,OU=ELEMENTS,DC=ao-el,DC=com" -SamAccountName 116 -Name "Семахина Алёна Витальевна"  -Surname Семахина -GivenName Алёна -UserPrincipalName 116@ao-el.com -DisplayName "Семахина Алёна Витальевна" -EmailAddress '116@svz-el.com' -MobilePhone '+89145636787' -ChangePasswordAtLogon $False -AccountPassword(Read-Host -AsSecureString "Input Password") -Enabled $true -CannotChangePassword $True -PasswordNeverExpires $True -Verbose
+
+New-ADUser -Path "OU=Users,OU=OFFICE_TINDA,OU=ELEMENTS,DC=ao-el,DC=com" -SamAccountName 145 -Name "Федосеева Алла"  -Surname Федосеева -GivenName Алла -UserPrincipalName 145@ao-el.com -DisplayName "Федосеева Алла" -EmailAddress '145@svz-el.com' -MobilePhone '+89145660152' -ChangePasswordAtLogon $False -AccountPassword(Read-Host -AsSecureString "Input Password") -Enabled $true -CannotChangePassword $True -PasswordNeverExpires $True -Verbose
+
+New-ADUser -Path "OU=Users,OU=OFFICE_TINDA,OU=ELEMENTS,DC=ao-el,DC=com" -SamAccountName 150 -Name "Семахин Игорь Иванович "  -Surname Семахин -GivenName Игорь -UserPrincipalName 150@ao-el.com -DisplayName "Семахин Игорь Иванович " -EmailAddress '150@svz-el.com' -MobilePhone '+89145760996' -ChangePasswordAtLogon $False -AccountPassword(Read-Host -AsSecureString "Input Password") -Enabled $true -CannotChangePassword $True -PasswordNeverExpires $True -Verbose
+
+
+New-ADUser -Path "OU=Users,OU=OFFICE_TINDA,OU=ELEMENTS,DC=ao-el,DC=com" -SamAccountName 106 -Name "Савостьянов Илья Даниилович"  -Surname Савостьянов -GivenName Илья -UserPrincipalName 106@ao-el.com -DisplayName "Савостьянов Илья Даниилович" -EmailAddress '106@svz-el.com' -MobilePhone '+89145567782' -ChangePasswordAtLogon $False -AccountPassword(Read-Host -AsSecureString "Input Password") -Enabled $true -CannotChangePassword $True -PasswordNeverExpires $True -Verbose
+
+
+New-ADUser -Path "OU=Users,OU=OFFICE_TINDA,OU=ELEMENTS,DC=ao-el,DC=com" -SamAccountName 104 -Name "Новак Иван Владимирович"  -Surname Новак -GivenName Иван -UserPrincipalName 104@ao-el.com -DisplayName "Новак Иван Владимирович" -EmailAddress '104@svz-el.com' -MobilePhone '+89152001045' -ChangePasswordAtLogon $False -AccountPassword(Read-Host -AsSecureString "Input Password") -Enabled $true -CannotChangePassword $True -PasswordNeverExpires $True -Verbose
+
+
+New-ADUser -Path "OU=Users,OU=OFFICE_TINDA,OU=ELEMENTS,DC=ao-el,DC=com" -SamAccountName 141 -Name "Меньшикова Екатерина"  -Surname Меньшикова -GivenName Екатерина -UserPrincipalName 141@ao-el.com -DisplayName "Меньшикова Екатерина" -EmailAddress '141@svz-el.com' -MobilePhone '+89143975431' -ChangePasswordAtLogon $False -AccountPassword(Read-Host -AsSecureString "Input Password") -Enabled $true -CannotChangePassword $True -PasswordNeverExpires $True -Verbose
+
+#Add mbadmin account to Admin Groups
+Add-ADGroupMember -Identity 'FSLogix Share Contributor' -Members 106,104,141
+Add-ADGroupMember -Identity 'WVDS' -Members 106,104,141
